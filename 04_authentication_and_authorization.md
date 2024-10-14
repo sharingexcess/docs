@@ -21,3 +21,7 @@ As we'll soon discuss, we manage permissions and other user information within o
 When a user first signs up, they'll create an account via Clerk, entering their name, email, and phone number. For the moment, this data will exist _only_ in Clerk, and not yet in our database.
 
 Inside our client applications (app.sharingexcess.com + partners.sharingexcess.com), we detect that this is a new user (based on having a valid auth session with clerk, but not having a user record in the internal database). We'll render any necessary "onboarding" views for the user, and in the background, the client will call the API to create a new user record.
+
+## Authorization
+
+TBD
